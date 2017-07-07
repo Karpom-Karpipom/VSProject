@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">New Recipe</button>
+    </div>
+</div>
+<hr>
+<div class="col-xs-12" *ngFor="let recipeObj of recipes">
+    <vs-recipeitem [recipe]="recipeObj" (recipeObjFromRecipeItemComp)="selectedRecipeDetail($event)" ></vs-recipeitem>
+</div>

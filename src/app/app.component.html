@@ -1,0 +1,10 @@
+<vs-headercomponent (link)='callLink($event)' ></vs-headercomponent>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <vs-recipes *ngIf="menuitem==='recipe'"></vs-recipes>
+            <vs-shoplist *ngIf="menuitem==='shopping-list'"></vs-shoplist>
+        </div>
+    </div>
+</div>
+
